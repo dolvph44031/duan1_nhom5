@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="bootstrap.js"></script>
+    <script src="font-fontawesome-ae333ffef2.js"></script>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <h2 class="mb-4">Trang quản lý danh mục sản phẩm (Admin)</h2>
+
+        <!-- Danh sách danh mục -->
+        <div class="card">
+            <div class="card-header">
+                Danh sách danh mục
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Danh mục 1
+                        <button class="btn btn-outline-danger btn-sm">Xóa</button>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Danh mục 2
+                        <button class="btn btn-outline-danger btn-sm">Xóa</button>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Danh mục 3
+                        <button class="btn btn-outline-danger btn-sm">Xóa</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Thêm danh mục -->
+        <div class="card mt-3">
+            <div class="card-header">
+                Thêm danh mục mới
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="newCategory" class="form-label">Tên danh mục:</label>
+                        <input type="text" class="form-control" id="newCategory" placeholder="Nhập tên danh mục">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Thêm danh mục</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Sửa danh mục -->
+        <div class="card mt-3">
+            <div class="card-header">
+                Sửa danh mục
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="editCategory" class="form-label">Chọn danh mục cần sửa:</label>
+                        <select class="form-select" id="editCategory">
+                            <option>Danh mục 1</option>
+                            <option>Danh mục 2</option>
+                            <option>Danh mục 3</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="editedName" class="form-label">Tên mới:</label>
+                        <input type="text" class="form-control" id="editedName" placeholder="Nhập tên mới">
+                    </div>
+                    <button type="submit" class="btn btn-warning">Sửa danh mục</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Xóa danh mục -->
+        <div class="card mt-3">
+            <div class="card-header">
+                Xóa danh mục
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="deleteCategory" class="form-label">Chọn danh mục cần xóa:</label>
+                        <select class="form-select" id="deleteCategory">
+                            <option>Danh mục 1</option>
+                            <option>Danh mục 2</option>
+                            <option>Danh mục 3</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-danger">Xóa danh mục</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
